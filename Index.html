@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--LINK DO CSS-->
+    <link rel="stylesheet" href="Criptador.css  " />
+    <title>Criptografia de texto</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--LOGO-->
+      <img
+        class="logo"
+        src="https://www.aluralingua.com.br/assets/api/share/alura-lingua.jpg"
+      />
+      <!--CAIXA DE DIGITAÇÃO-->
+      <div class="box">
+        <textarea
+          id="right"
+          name="name"
+          cols="6"
+          rows="10"
+          placeholder="Digite seu texto.."
+        ></textarea>
+      </div>
+
+      <!--CAIXA DE RESULTADOS-->
+      <div class="box-result">
+        <img
+          class="logo-result"
+          src="High quality products 1 1.jpg"
+          id="img-right"
+        />
+        <h1 id="texto">Nenhuma mensagem encontrada</h1>
+
+        <textarea
+          id="left"
+          name="name"
+          cols="4"
+          rows="8"
+          placeholder="Digite um texto que você deseja criptografar ou descriptografar."
+        ></textarea>
+
+        <button id="copy" type="button" name="button" onclick="copy()">
+          Copiar
+        </button>
+      </div>
+
+      <!--PARÁGRAFO-->
+      <div class="p">
+        <p>&excl;Apenas letras minúsculas e sem acento</p>
+      </div>
+
+      <!--BUTÕES DE COMANDO-->
+      <div class="buttons">
+        <button type="button" id="btn-criptografar" onclick="criptador()">
+          Criptografar
+        </button>
+
+        <button type="button" id="btn-descriptografar" onclick="descriptador()">
+          Descriptografar
+        </button>
+      </div>
+    </div>
+
+    <!--RODAPÉ-->
+    <footer>
+      <p>Desenvolvedor: Brandon lee</p>
+    </footer>
+  </body>
+
+  <!--LINK DO JAVACRIPT-->
+  <script tapy="text/javascript" src="Criptador.js"></script>
+</html>
